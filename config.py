@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "eda231ff278ef43dc36164de83ee8fd6")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002240732384"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1833463223"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6307223516"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://megadiwani:gnTnDjCx1jB9W9
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002238297424"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "1"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "1"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI am official bot of providing videos for Naughty X from special links.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1833463223").split()):
+    for x in (os.environ.get("ADMINS", "6307223516").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
